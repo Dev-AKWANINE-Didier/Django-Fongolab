@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django</title>
+</head>
+<body>
+    
+    <h1>Bonjour Django</h1>
+
+    <p>Bonjour {{name}}</p>
+
+    {% for color in colors  %}
+        <p style="color: red; text-decoration: underline;">{{color}}</p>
+    {% endfor %}
+
+
+    <a href="{% url 'home' 5 %}">Lien pour 3</a>
+
+
+</body>
+</html>
