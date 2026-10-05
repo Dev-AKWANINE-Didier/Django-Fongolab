@@ -117,6 +117,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / "js", 
+    BASE_DIR / "css", 
+    BASE_DIR / "static"
+]
+
+
+
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
