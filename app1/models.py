@@ -11,6 +11,10 @@ class Person(models.Model):
     def __str__(self):
         return f"{self.first_name} - {self.email}"
     
+    class Meta:
+        # app_label = "app2"
+        # base_manager_name = "objects"
+        db_table="persons"
     
 class Product(models.Model):
     name = models.CharField(max_length=50)
